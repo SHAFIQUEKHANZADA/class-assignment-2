@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+
+.text_shadow {
+  text-shadow: 0 0 5px rgba(0, 0, 0, .485);
+}
+
+.line-indicator li {
+  width: 70px !important;
+  height: 4px !important;
+  border-radius: 10px;
+  background-color: rgba(142, 142, 142, 0.5);
+}
+
+.line-indicator li:hover {
+  background-color: rgba(168, 167, 167, 0.4);
+}
+
+.line-indicator li.slick-active {
+  background-color: #000000;
+}
+
+.box_shadow {
+  box-shadow: 0 0 15px rgba(0, 0, 0, .245);
+}
+
+.instagram {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+}
